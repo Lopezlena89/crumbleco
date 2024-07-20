@@ -17,7 +17,7 @@ export const MenuBar = () => {
                   <VscClose size={30} className="cursor-pointer hover:fill-[rgb(255,21,121)] duration-300" onClick={()=>setStateMenu()}/>
                 </div>
                 <div className="w-full h-[5%] px-[10%]  flex justify-start items-center">
-                  <span className="hover:text-[rgb(255,21,121)] duration-300 cursor-pointer">Home</span>
+                  <span className="hover:text-[#ff1579] duration-300 cursor-pointer">Home</span>
                 </div>
                 <div className="w-full h-[5%] px-[10%]  flex justify-start items-center">
                   <span className="hover:text-[rgb(255,21,121)] duration-300 cursor-pointer">Hello Friends</span>

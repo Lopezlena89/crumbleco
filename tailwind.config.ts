@@ -13,7 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily:{
+        market: ['market_saturday', 'sans-serif'],
+        century:['century_gothic','sans-serif']
+      }
     },
+    
   },
   plugins: [],
 };
