@@ -11,21 +11,21 @@ export const Main = () => {
   return (
       <>
         
-        <div className="w-full h-auto p-[5%] flex flex-col-reverse md:flex-row gap-10">
+        <div className="w-full h-auto p-[2%] flex flex-col-reverse md:flex-row gap-10">
         
           <div className="w-full md:w-1/2 h-[400px] md:h-full flex items-center justify-center"> 
-            <div className="rounded-xl shadow-xl w-[90%] md:w-[500px] h-[90%] md:h-[500px] bg-[url('/hello_friends.webp')] bg-cover bg-center"  /> 
+            <div className="rounded-sm shadow-xl w-[90%] md:w-[500px] h-[90%] md:h-[500px] bg-[url('/hello_friends.webp')] bg-cover bg-center"  /> 
           </div>
           <div className="w-full md:w-1/2 h-auto md:h-full flex items-center justify-center">
             
-            <div className="rounded-3xl  p-5 md:p-10 w-[90%] md:w-[500px] h-auto  md:h-[500px] shadow-xl flex flex-col items-center justify-start">
+            <div className="mt-[5%] w-[90%] md:w-[90%] h-auto  md:h-[500px] flex flex-col items-center justify-center">
               {letterMain.map((letter,index)=>(
-                <div key={index} className='flex flex-col  items-center pt-[5%] md:pt-[15%]'>
+                <div key={index} className='flex flex-col  items-center '>
                     <h2 className='font-market text-6xl'>{letter.title}</h2>
                     <p className='font-century pt-[5%]'>{letter.paragraph}</p>
                 </div>
               ))}
-              <Button color='danger' >
+              <Button color='danger' className='rounded-md mt-[5%]' >
                   Nosotros
               </Button>
             </div> 

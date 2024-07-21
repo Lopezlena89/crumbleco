@@ -27,15 +27,12 @@ export const Basket = () => {
                 {
                     navProducts.map((product,index)=>(
                         <DropdownItem key={index} className="flex items-center w-full">
-                            <div className="w-full flex items-center  justify-between">
+                            <div className="w-full flex items-center  justify-start">
                                 <div className="flex items-center">
                                     <span className="font-semibold">{product.total}</span>
                                     <span className="font-semibold pl-2">{product.product} </span>
                                 </div>
-                                <div className="flex items-center">
-                                    <Image  alt="Cookietella" width={20} height={20} src={product.image}/>
-                                    
-                                </div>
+                               
                             </div>
                         </DropdownItem>
                     ))
