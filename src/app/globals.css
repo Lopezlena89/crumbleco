@@ -10,6 +10,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'century_gothic';
   src: url('/Century_Gothic/centurygothic.ttf') format('truetype'),
@@ -38,11 +39,7 @@
         background-image: url("/4.webp");
     }
 }
-/* fuente-century */
-.fuente-market {
-  font-family:market_saturday;
-  color:red;
-}
+
 
 .photo-container {
     position: relative;
@@ -82,4 +79,18 @@
     /* 25% { opacity: 0; filter: blur(10px); } */
     35% { opacity: 0; filter: blur(10px); }
   }
+
+
+.container-card{
+  overflow-x: scroll; /* Habilita el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Tipo de desplazamiento obligatorio en el eje x */
+  white-space: nowrap; 
+}
+.card{
+scroll-snap-align: center; /* Alineación de inicio del elemento al hacer scroll */
+flex-shrink: 0; /* Evita que los elementos se reduzcan */
+display: inline-flex; /* Hace que los elementos estén en línea y respeten el ancho y alto especificados */
+white-space: normal;
+
+}
 

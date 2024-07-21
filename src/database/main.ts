@@ -6,3 +6,8 @@ export const letterMain = [
     }
 ]
 
+export const meetProducts = {
+        title:'Meet our Products'
+}
+
+

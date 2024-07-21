@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
+import { Provider } from "@/providers/Provider";
 
 export const metadata: Metadata = {
   title: "Crumbleco_",
@@ -43,7 +44,11 @@ export default function RootLayout({
   return (
     <html lang="es-MX">
       
-      <body className={''}>{children}</body>
+        <body className={''}>
+          <Provider>
+            {children}
+          </Provider>
+        </body>
     </html>
   );
 }

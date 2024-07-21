@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build":"npx @cloudflare/next-on-pages"
+    "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.4.6",
+    "framer-motion": "^11.3.8",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
