@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Crumbleco_',
     description: 'Crumbleco galletas y postres',
-    url: 'https://crumbleags.com',
+    url: 'https://crumbleco.com',
     siteName: 'Crumbleco_',
     images: [
       {
