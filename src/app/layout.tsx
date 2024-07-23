@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Crumbleco_',
     images: [
       {
-        url: '/crumble.png',
+        url: 'https://crumbleco.pages.dev/',
         width: 800,
         height: 600,
         alt:"Crumbleco_"
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     type: 'website'
   },
   twitter: {
+    card: 'summary_large_image',
     title: 'Crumble Co',
     description: 'Galletas Crumble',
     images:'/crumble.png', // Must be an absolute URL
