@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     siteName: 'Crumbleco_',
     images: [
       {
-        url: '/crumbleco.webp',
+        url: '/crumble.png',
         width: 800,
-        height: 800,
+        height: 600,
         alt:"Crumbleco_"
       },
       

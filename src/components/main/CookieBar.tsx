@@ -10,7 +10,7 @@ import { cookieBar } from '../../database/main';
 export const CookieBar = () => {
   return (
     <>
-        <div className="w-full px-[0%] my-[10%] md:mb-[5%] md:px-[3%]">
+        <div className="w-full px-[0%] my-[10%] md:my-[0%] md:mb-[5%] md:px-[3%]">
           <div className="w-[100%]  rounded-lg h-auto bg-[rgba(255,21,121,1)] mb-[10px] flex flex-col  md:flex-row"> 
             <div className="h-[350px] md:h-auto md:w-[40%] flex flex-col justify-center items-center p-[5%] px-[10%] md:px-[2%]">
                 <p className="font-market text-white text-6xl">{cookieBar.title}</p>
