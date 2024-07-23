@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   authors:[{name:'Luis Mariano Lopez Lena Valdivieso',url:'https://lumava.site'}],
   category:'galletas',
   keywords:["galletas","aguascalientes","postres","negocio"],
-  metadataBase:new URL("https://crumbleco.com"),
+  metadataBase:new URL("https://crumbleags.com"),
   alternates:{
     canonical: '/',
     languages: {
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Crumbleco_',
-    description: 'Crumbleco galletas y postres',
-    url: 'https://crumbleco.com',
+    description: 'Crumbleco galletas ',
+    url: 'https://crumbleags.com',
     siteName: 'Crumbleco_',
     images: [
       {
@@ -34,6 +34,12 @@ export const metadata: Metadata = {
     locale: 'es_MX',
     type: 'website'
   },
+  twitter: {
+    title: 'Crumble Co',
+    description: 'Galletas Crumble',
+    images:'/crumble.png', // Must be an absolute URL
+  },
+
 };
 
 export default function RootLayout({
