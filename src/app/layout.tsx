@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   authors:[{name:'Luis Mariano Lopez Lena Valdivieso',url:'https://lumava.site'}],
   category:'galletas',
   keywords:["galletas","aguascalientes","postres","negocio"],
-  metadataBase:new URL("https://crumbleags.com"),
+  metadataBase:new URL("https://crumbleco.com"),
   alternates:{
     canonical: '/',
     languages: {
