@@ -1,9 +1,7 @@
-import { Main } from "@/components/main/Main";
-import { Meet } from "@/components/main/Meet";
-import { Principal } from "@/components/main/Principal";
+
+import { Main, Meet, Principal,CookieCare,OurPlace, CookieBar } from "@/components/main";
 import { MenuBar } from "@/components/nav/MenuBar";
 import { NavBar } from "@/components/nav/NavBar";
-
 
 export const runtime = 'edge';
 
@@ -18,6 +16,9 @@ export default function Page(){
         <Principal/>
         <Main/>
         <Meet/>
+        <CookieCare/>
+        <CookieBar/>
+        {/* <OurPlace/>  */}
         
       </div>
       

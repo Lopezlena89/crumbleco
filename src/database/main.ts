@@ -10,4 +10,17 @@ export const meetProducts = {
         title:'Meet our Products'
 }
 
+export const cookieCare={
+    title:'Cookie Care',
+    paragraph:'Nuestras galletas están cocinadas con ingredientes de la más alta calidad, con procesos estandarizados y con mucho mucho amor.',
+    paragraph2:'Para mantener su frescura te recomendamos los siguientes tips:'
+}
+
+export const cookieBar = {
+    title:'Cookies',
+    cookie:"Descubre la magia en cada mordisco con nuestras galletas artesanales. Hechas con ingredientes de la más alta calidad y un toque de amor, nuestras galletas te transportarán a momentos dulces y memorables.",
+    button:"Go"
+
+}
+
 
