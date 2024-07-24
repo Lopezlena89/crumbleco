@@ -22,16 +22,16 @@ export const metadata: Metadata = {
     description: 'Crumbleco galletas ',
     url: 'https://crumbleags.com',
     siteName: 'Crumbleco_',
-    images:'/crumble.png',
-    // images: [
-    //   {
-    //     url: 'https://crumbleco.pages.dev/',
-    //     width: 800,
-    //     height: 600,
-    //     alt:"Crumbleco_"
-    //   },
+    // images:'/crumble.png',
+    images: [
+      {
+        url: 'https://crumbleco.pages.dev/',
+        width: 800,
+        height: 600,
+        alt:"Crumbleco_"
+      },
       
-    // ],
+    ],
     locale: 'es_MX',
     type: 'website'
   },

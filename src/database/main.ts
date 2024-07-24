@@ -23,4 +23,9 @@ export const cookieBar = {
 
 }
 
+export const local = {
+    title:'Conoce nuestro local',
+    paragraph:'Ya sea que busques un clásico sabor a chocolate o una creación más innovadora, en Crumble encontrarás la galleta perfecta para cualquier ocasión. ¡Visítanos y descubre por qué nuestras galletas están conquistando corazones!'
+}
+
 

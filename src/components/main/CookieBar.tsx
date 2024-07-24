@@ -11,11 +11,15 @@ export const CookieBar = () => {
   return (
     <>
         <div className="w-full px-[0%] my-[10%] md:my-[0%] md:mb-[5%] md:px-[3%]">
+          {/* <div className="w-[100%]  rounded-lg h-auto bg-[#c8a7ae] mb-[10px] flex flex-col  md:flex-row">  */}
+          {/* <div className="w-[100%]  rounded-lg h-auto bg-[#cfb0b6] mb-[10px] flex flex-col  md:flex-row">  */}
           <div className="w-[100%]  rounded-lg h-auto bg-[rgba(255,21,121,1)] mb-[10px] flex flex-col  md:flex-row"> 
+          {/* <div className="w-[100%]  rounded-lg h-auto bg-[#ffd9d9] mb-[10px] flex flex-col  md:flex-row">  */}
             <div className="h-[350px] md:h-auto md:w-[40%] flex flex-col justify-center items-center p-[5%] px-[10%] md:px-[2%]">
                 <p className="font-market text-white text-6xl">{cookieBar.title}</p>
                 <p className="text-white font-century">{cookieBar.cookie}</p>
                 <Button  color="danger" className="mt-5 text-[rgba(255,21,121,1)] h-8 rounded-md bg-white" >
+                {/* <Button  color="danger" className="mt-5 text-black h-8 rounded-md bg-white" > */}
                   {cookieBar.button}
                 </Button>
             </div>

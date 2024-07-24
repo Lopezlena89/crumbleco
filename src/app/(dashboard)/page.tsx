@@ -1,5 +1,6 @@
 
-import { Main, Meet, Principal,CookieCare,OurPlace, CookieBar } from "@/components/main";
+import { Footer } from "@/components/footer/Footer";
+import { Main, Meet, Principal,CookieCare, CookieBar,Local } from "@/components/main";
 import { MenuBar } from "@/components/nav/MenuBar";
 import { NavBar } from "@/components/nav/NavBar";
 
@@ -10,7 +11,7 @@ export default function Page(){
 
   return (
     <>
-      <div className="w-full h-full flex flex-col bg-[#fffafa]  overflow-hidden">
+      <main className="w-full h-full flex flex-col bg-[#fffafa]  overflow-hidden">
         <NavBar/>
         <MenuBar/>
         <Principal/>
@@ -18,9 +19,10 @@ export default function Page(){
         <Meet/>
         <CookieCare/>
         <CookieBar/>
-        {/* <OurPlace/>  */}
+        <Local/>
+        <Footer/>
         
-      </div>
+      </main>
       
     </>
   )

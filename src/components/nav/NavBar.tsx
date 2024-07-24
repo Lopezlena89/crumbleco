@@ -17,8 +17,11 @@ export const NavBar = () => {
               
               <PiMapPinLight size={22} className="ml-3 hidden sm:block cursor-pointer hover:fill-[rgb(255,21,121)] duration-300"  />
             </div>
-            
-              <Image className="flex items-center cursor-pointer " alt="logo cumbleco_" height={100} width={100} quality={100} priority src="/crumblr-01.png"/>
+            <div className="flex flex-col h-full  justify-center items-center overflow-hidden">
+              <Image alt="logo crumble" src="/crumble-logo.png" className="relative -top-2  w-[100px] md:w-[90px] h-[100px] md:h-[90px]"  quality={100} priority  width={110} height={110}/>
+              <h1 className="font-market text-xl md:text-2xl absolute -bottom-1">Crumble Co</h1>
+            </div>
+              {/* <Image className="flex items-center cursor-pointer " alt="logo cumbleco_" height={100} width={100} quality={100} priority src="/crumblr-01.png"/> */}
            
             <div className="items-center w-[90px] flex justify-end ">
                 <Basket/>

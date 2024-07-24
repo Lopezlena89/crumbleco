@@ -16,7 +16,7 @@ export const Main = () => {
             <div className="rounded-sm shadow-xl w-[100%]  h-[90%] md:h-[500px] bg-[url('/hello_friends.webp')] bg-cover bg-center"  /> 
           </div>
           <div className="w-full md:w-1/2 h-auto py-[10%] md:py-[0%] md:h-full flex items-center justify-center">
-            <div className="mt-[5%] w-[90%] md:w-[90%] h-auto  md:h-[500px] flex flex-col items-center justify-center">
+            <div className="mt-[5%] w-[80%] md:w-[70%] h-auto  md:h-[500px] flex flex-col items-center justify-center">
               {letterMain.map((letter,index)=>(
                 <div key={index} className='flex flex-col  items-center '>
                     <h2 className='font-market text-6xl'>{letter.title}</h2>
