@@ -24,7 +24,7 @@ export const CardElement = ({cookie}:Props) => {
     <>
          <Card isFooterBlurred className="rounded-xl border-0 border-black w-[200px] mx-[1%] md:w-[250px] h-[300px] card">
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                <h3 className="text-[rgb(255,21,121)] font-century text-xl">{name}</h3>
+                <h3 className="text-[#d2b3b8] font-century text-xl">{name}</h3>
             </CardHeader>
             <Image
                 width={200}
@@ -35,7 +35,7 @@ export const CardElement = ({cookie}:Props) => {
             />
             <CardFooter className="rounded-sm absolute bg-black/10 bottom-0  flex justify-around">
                
-               <Button color='danger' className="font-century">Add</Button>
+               <Button  className="font-century bg-[#d2b3b8] text-white">Add</Button>
             </CardFooter>
         </Card>
     </>

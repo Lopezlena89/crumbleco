@@ -12,13 +12,13 @@ export const CookieCare = () => {
             </div>
             <div className="w-full md:w-[30%] h-auto   md:h-full flex items-center justify-center">
                 <div className="my-[5%] w-[90%] md:w-[80%] h-auto  md:h-[500px] flex flex-col items-center justify-center">
-                    <div className='flex flex-col  items-center '>
+                    <div className='flex flex-col  items-center text-center '>
                         <h2 className="font-market text-5xl">{cookieCare.title}</h2>
-                        <p className='font-century pt-[5%]'>{cookieCare.paragraph}</p>
-                        <p className='font-century pt-[5%]'>{cookieCare.paragraph2}</p>
+                        <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph}</p>
+                        <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph2}</p>
                     </div>
                 
-                    <Button color='danger' className='rounded-md font-century mt-[10%]' >
+                    <Button  className='rounded-md bg-[#d2b3b8] text-white font-century mt-[10%]' >
                         Cookie Care
                     </Button>
                 </div> 

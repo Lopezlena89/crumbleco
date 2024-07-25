@@ -21,7 +21,7 @@ export const Meet = () => {
                     />
                     <CardFooter className="rounded-sm absolute border-t-1 border-t-black  bg-black/30 bottom-0  flex justify-around">
                         <p className="text-white/60 text-2xl font-century">Cookie Bar</p>
-                        <Button color='danger' className="text-white font-century rounded-md" size="sm">Go</Button>
+                        <Button className="text-white  bg-[#d2b3b8] font-century rounded-md" size="sm">Go</Button>
                     </CardFooter>
                 </Card>
                 <Card isFooterBlurred className="rounded-sm w-[300px] md:w-[350px] mx-10 h-[400px] card">
@@ -34,7 +34,7 @@ export const Meet = () => {
                     />
                     <CardFooter className="rounded-sm absolute text-2xl border-t-1 border-t-black  bg-black/30 bottom-0  flex justify-around">
                         <p className="font-century text-white/60">Crumble Specials</p>
-                        <Button color='danger' size="sm" className="font-century rounded-md">Go</Button>
+                        <Button size="sm" className="font-century bg-[#d2b3b8] text-white rounded-md">Go</Button>
                     </CardFooter>
                 </Card>
                 <Card isFooterBlurred className="rounded-sm w-[300px] md:w-[350px] h-[400px] card">
@@ -47,7 +47,7 @@ export const Meet = () => {
                     />
                     <CardFooter className="rounded-sm absolute text-2xl border-t-1 border-t-black  bg-black/30 bottom-0  flex justify-around">
                         <p className="font-century text-white/60">Cold Bar</p>
-                        <Button color='danger' size="sm" className="font-century rounded-md">Go</Button>
+                        <Button size="sm" className="font-century bg-[#d2b3b8]  text-white rounded-md">Go</Button>
                     </CardFooter>
                 </Card>
                 

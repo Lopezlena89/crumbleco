@@ -19,7 +19,7 @@ export const Local = () => {
                         <h2 className='font-market text-6xl text-center'>{local.title}</h2>
                         <p className='font-century pt-[5%]'>{local.paragraph}</p>
                     </div>
-                    <Button color='danger' className='rounded-md font-century mt-[5%]' >
+                    <Button className='rounded-md font-century bg-[#d2b3b8] text-white mt-[5%]' >
                         Nosotros
                     </Button>
                 </div> 

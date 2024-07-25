@@ -16,7 +16,7 @@ export const Basket = () => {
         <Dropdown placement="bottom-end">
           <DropdownTrigger>
             <Link  className="bg-transparent">
-                <CiShoppingBasket  className="cursor-pointer fill-[rgb(255,21,121)] duration-300"   size={22} />
+                <CiShoppingBasket  className="cursor-pointer fill-[#d2b3b8] duration-300"   size={22} />
             </Link>
           </DropdownTrigger>
           <DropdownMenu aria-label="Profile Actions" variant="flat">

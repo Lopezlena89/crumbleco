@@ -13,9 +13,9 @@ export const NavBar = () => {
     <>
         <div className="w-full h-[60px] bg-white/95 flex justify-between items-center px-[6%] sm:px-[10%] fixed shadow-xl z-10  border-[rgba(0,0,0,0.1)] border-b-[0.1px]">
             <div className="flex items-center w-[90px] ">
-              <VscMenu size={22} className="cursor-pointer hover:fill-[rgb(255,21,121)] duration-300" onClick={()=>setStateMenu()}/>
+              <VscMenu size={22} className="cursor-pointer hover:fill-[#d2b3b8] duration-300" onClick={()=>setStateMenu()}/>
               
-              <PiMapPinLight size={22} className="ml-3 hidden sm:block cursor-pointer hover:fill-[rgb(255,21,121)] duration-300"  />
+              <PiMapPinLight size={22} className="ml-3 hidden sm:block cursor-pointer hover:fill-[#d2b3b8] duration-300"  />
             </div>
             <div className="flex flex-col h-full  justify-center items-center overflow-hidden">
               <Image alt="logo crumble" src="/crumble-logo.png" className="relative -top-2  w-[100px] md:w-[90px] h-[100px] md:h-[90px]"  quality={100} priority  width={110} height={110}/>
@@ -25,8 +25,8 @@ export const NavBar = () => {
            
             <div className="items-center w-[90px] flex justify-end ">
                 <Basket/>
-                <PiWhatsappLogoThin size={22} className="mx-3 hidden sm:block cursor-pointer hover:fill-[rgb(255,21,121)] duration-300" />
-                <PiInstagramLogoThin size={22} className="ml-3 sm:ml-0 cursor-pointer hover:fill-[rgb(255,21,121)] duration-300" />
+                <PiWhatsappLogoThin size={22} className="mx-3 hidden sm:block cursor-pointer hover:fill-[#d2b3b8] duration-300" />
+                <PiInstagramLogoThin size={22} className="ml-3 sm:ml-0 cursor-pointer hover:fill-[#d2b3b8] duration-300" />
             </div>
             
             
