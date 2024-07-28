@@ -7,7 +7,9 @@ const nextConfig = {
           hostname: 'nextui.org',
           pathname: '/**',
         },
-      ]}
+      ],
+    }
+   
       //   domains: ['nextui.org'],
       // },
 };

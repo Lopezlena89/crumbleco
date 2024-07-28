@@ -7,7 +7,7 @@ interface props{
         cookie: string
      } 
 }
-
+export const runtime = 'edge';
 
 export default function page({ params }:props){
 

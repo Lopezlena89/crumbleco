@@ -6,6 +6,7 @@ interface props{
   } 
 }
 
+export const runtime = 'edge';
 const getProduct  = (id:string) =>{
   const convertId = Number(id);
 
