@@ -23,7 +23,7 @@ export const Main = () => {
                     <p className='font-century pt-[5%] text-center'>{letter.paragraph}</p>
                 </div>
               ))}
-              <Button  className='rounded-md font-century bg-[#d2b3b8] text-white mt-[5%]' >
+              <Button  className='rounded-md font-century bg-[#e19c99] text-black mt-[5%]' >
                   Nosotros
               </Button>
             </div> 

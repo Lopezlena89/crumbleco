@@ -46,7 +46,10 @@
     width: full; 
     height: 800px; 
   }
-
+.gradient{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+}
 .photo {
     position: absolute;
     width: 100%;

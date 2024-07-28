@@ -10,7 +10,7 @@ export default function Page(){
 
   return (
     <>
-      <main className="w-full h-full flex flex-col bg-[#fffafa]  overflow-hidden">
+      <div className="w-full h-full flex flex-col bg-[#fffafa]  overflow-hidden">
         <NavBar/>
         <MenuBar/>
         <Principal/>
@@ -20,7 +20,7 @@ export default function Page(){
         <CookieBar/>
         <Footer/>
         
-      </main>
+      </div>
       
     </>
   )

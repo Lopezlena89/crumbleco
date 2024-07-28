@@ -2,9 +2,10 @@
 
 import { Button, CardFooter,Card, CardHeader } from "@nextui-org/react"
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { IoStar } from "react-icons/io5";
 
-
+import {  useState } from "react";
 
 
 interface Props{
@@ -34,32 +35,34 @@ export const CardElement = ({cookie}:Props) => {
       setState(false);
     };
    
-
+                
   return (
     <>
-        <Card isFooterBlurred className="w-full h-[300px]">
+        <Card isFooterBlurred className="w-full h-[300px] rounded-xl ">
             
-            <div
-                className="relative w-full h-full bg-gradient-to-t from-gray-50 to-gray-100"
+            <Link
+                href={'/cookies/' + id} 
+                className="relative w-full h-full gradient"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-               
                 <Image
                 width={200}
                 height={200}
                 alt={name}
-                className=" w-full h-full object-cover "
+                className=" w-full h-full object-cover  "
                 src={state && image2 ? image2 : image1}
                 />
-            </div>
-            <CardFooter className="absolute bg-[rgba(210,179,184,0.5)] bottom-0 border-t-1 border-[#d2b3b8] dark:border-default-100 flex justify-around items-center">
+            </Link>
+            <CardFooter className="absolute bg-[rgba(210,179,184,0.4)] bottom-0  rounded-b-lg dark:border-default-100 flex flex-col justify-around items-center">
              <h3 className="font-market text-3xl text-amber-900">{name}</h3>
-            <Button
-                className="bg-gray-200 border-1"
-            >
-                <span className="text-amber-900">Go</span>
-            </Button>
+              <div className="flex items-center">
+                <IoStar fill="#e19c99"/>
+                <IoStar fill="#e19c99"/>
+                <IoStar fill="#e19c99"/>
+                <IoStar fill="#e19c99"/>
+                <IoStar fill="#e19c99"/>
+              </div>
                 
             </CardFooter>
         </Card>

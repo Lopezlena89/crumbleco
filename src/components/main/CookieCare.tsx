@@ -18,7 +18,7 @@ export const CookieCare = () => {
                         <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph2}</p>
                     </div>
                 
-                    <Button  className='rounded-md bg-[#d2b3b8] text-white font-century mt-[10%]' >
+                    <Button  className='rounded-md bg-[#e19c99]  text-black font-century mt-[10%]' >
                         Cookie Care
                     </Button>
                 </div> 

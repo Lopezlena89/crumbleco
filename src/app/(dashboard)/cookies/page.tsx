@@ -7,13 +7,13 @@ import { MenuBar, NavBar } from "@/components/nav"
 export default function page(){
   return (
     <>
-        <main className="w-full h-screen">
+        <div className="w-full h-full flex flex-col">
             <NavBar/>
             <MenuBar/>
             <PrincipalCookies/>
             <CookiesBar/>
             <Footer/>
-        </main>
+        </div>
     </>
   )
 }
