@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer/Footer";
 import { Main, Meet, Principal,CookieCare, CookieBar } from "@/components/main";
 import { MenuBar } from "@/components/nav/MenuBar";
 import { NavBar } from "@/components/nav/NavBar";
-
 export const runtime = 'edge';
 
 export default function Page(){
@@ -19,7 +18,6 @@ export default function Page(){
         <Meet/>
         <CookieCare/>
         <CookieBar/>
-        
         <Footer/>
         
       </main>

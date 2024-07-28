@@ -1,7 +1,10 @@
 'use client'
 
 import { Button, CardFooter,Card, CardHeader } from "@nextui-org/react"
-import Image from "next/image"
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
+
 
 
 interface Props{
@@ -15,27 +18,49 @@ interface Props{
     }
 }
 
-
 export const CardElement = ({cookie}:Props) => {
 
     const {id, name, price, image1, image2, image3} = cookie;
 
+    const [state, setState] = useState(false);
+
+    const handleMouseEnter = () => {
+      if (image2) {
+        setState(true);
+      }
+    };
+  
+    const handleMouseLeave = () => {
+      setState(false);
+    };
+   
+
   return (
     <>
-         <Card isFooterBlurred className="rounded-xl border-0 border-black w-[200px] mx-[1%] md:w-[250px] h-[300px] card">
-            <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                <h3 className="text-[#d2b3b8] font-century text-xl">{name}</h3>
-            </CardHeader>
-            <Image
+        <Card isFooterBlurred className="w-full h-[300px]">
+            
+            <div
+                className="relative w-full h-full bg-gradient-to-t from-gray-50 to-gray-100"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+               
+                <Image
                 width={200}
                 height={200}
-                alt="Relaxing app background"
-                className="z-0 w-full h-full object-cover"
-                src={image1}
-            />
-            <CardFooter className="rounded-sm absolute bg-black/10 bottom-0  flex justify-around">
-               
-               <Button  className="font-century bg-[#d2b3b8] text-white">Add</Button>
+                alt={name}
+                className=" w-full h-full object-cover "
+                src={state && image2 ? image2 : image1}
+                />
+            </div>
+            <CardFooter className="absolute bg-[rgba(210,179,184,0.5)] bottom-0 border-t-1 border-[#d2b3b8] dark:border-default-100 flex justify-around items-center">
+             <h3 className="font-market text-3xl text-amber-900">{name}</h3>
+            <Button
+                className="bg-gray-200 border-1"
+            >
+                <span className="text-amber-900">Go</span>
+            </Button>
+                
             </CardFooter>
         </Card>
     </>

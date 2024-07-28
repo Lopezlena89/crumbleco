@@ -66,8 +66,8 @@ export const cookies = [
         name:'Cookietellas',
         price:25,
         image1:'/cookies/Cookietellas/IMG_8888.webp',
-        image2:'/cookies/Cookietellas/IMG_8912.webp',
-        image3:'/cookies/Cookietellas/IMG_8926.webp',
+        image2:'/cookies/Cookietellas/IMG_8926.webp',
+        image3:'/cookies/Cookietellas/IMG_8912.webp',
     },
     {
         id:7,
@@ -129,8 +129,8 @@ export const cookies = [
         name:'Midnightsun',
         price:25,
         image1:'/cookies/Midnightsun/IMG_8872.webp',
-        image2:'/cookies/Midnightsun/IMG_8873.webp',
-        image3:'/cookies/Midnightsun/IMG_8920.webp',
+        image2:'/cookies/Midnightsun/IMG_8920.webp',
+        image3:'/cookies/Midnightsun/IMG_8873.webp',
     },
     {
         id:16,

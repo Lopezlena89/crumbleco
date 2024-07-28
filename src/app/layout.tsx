@@ -51,8 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-MX">
-      
-        <body className={''}>
+        <body >
           <Provider>
             {children}
           </Provider>
