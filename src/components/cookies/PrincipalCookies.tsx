@@ -7,7 +7,7 @@ import Image from "next/image"
 export const PrincipalCookies = () => {
   return (
     
-    <div className="w-full h-[700px] md:h-[800px] relative bg-gradient-to-b from-red-100 to-white flex justify-start overflow-hidden">
+    <div className="w-full h-[700px] md:h-[850px] relative bg-gradient-to-b from-red-100 to-white flex justify-start overflow-hidden">
         <div className="w-full sm:w-1/2 lg:w-[70%] h-full flex justify-center">
             <div className="w-full  lg:w-[70%]h-full flex flex-col items-center justify-center">
                 <h2 className="font-market text-6xl lg:text-8xl w-[400px] text-center text-amber-900">{cookiesData.title}</h2>
@@ -25,7 +25,7 @@ export const PrincipalCookies = () => {
                 </div>
             </div>
         </div>
-        <Image width={700} height={900} className="absolute hidden sm:block -top-10 -right-20 lg:-right-14" src="/minibox.webp" alt="main-cookies"/>
+        <Image width={700} height={900} className="absolute hidden sm:block -top-10 -right-[15%] lg:-right-[5%] " src="/minibox.webp" alt="main-cookies"/>
     </div>
     
   )

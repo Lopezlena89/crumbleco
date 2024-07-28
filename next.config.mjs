@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['nextui.org'],
-      },
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'nextui.org',
+          pathname: '/**',
+        },
+      ]}
+      //   domains: ['nextui.org'],
+      // },
 };
 
 export default nextConfig;
