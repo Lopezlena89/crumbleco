@@ -25,7 +25,7 @@ export const PrincipalCookies = () => {
                 </div>
             </div>
         </div>
-        <Image width={700} height={900} className="absolute hidden sm:block -top-10 -right-[15%] lg:-right-[5%] " src="/minibox.webp" alt="main-cookies"/>
+        <Image width={700} height={700} className="absolute hidden sm:block -top-10 -right-[15%] lg:-right-[5%] " src="/minibox.webp" alt="main-cookies"/>
     </div>
     
   )

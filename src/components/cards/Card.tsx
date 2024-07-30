@@ -11,6 +11,7 @@ import {  useState } from "react";
 interface Props{
     cookie:{
         id:number,
+        title:string,
         name:string,
         price:number,
         image1:string,
@@ -21,7 +22,7 @@ interface Props{
 
 export const CardElement = ({cookie}:Props) => {
 
-    const {id, name, price, image1, image2, image3} = cookie;
+    const {id, name,title, price, image1, image2, image3} = cookie;
 
     const [state, setState] = useState(false);
 
@@ -39,9 +40,8 @@ export const CardElement = ({cookie}:Props) => {
   return (
     <>
         <Card isFooterBlurred className="w-full h-[300px] rounded-xl ">
-            
             <Link
-                href={'/cookies/' + id} 
+                href={'/cookies/' + title} 
                 className="relative w-full h-full gradient"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}

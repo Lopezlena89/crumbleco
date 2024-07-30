@@ -1,3 +1,5 @@
+import { describe } from "node:test"
+
 export interface navProps{
     total:number,
     product:string,
@@ -28,6 +30,8 @@ export const cookies = [
     {
         id:1,
         name:'Baby Crumble',
+        title:'BabyCrumble',
+        description:'galleta XXL cubierta con betún de queso crema y chispas de estrellas ',
         price:25,
         image1:'/cookies/BabyCrumble/IMG_8932.webp',
         image2:'/cookies/BabyCrumble/IMG_8868.webp',
@@ -35,6 +39,8 @@ export const cookies = [
     {
         id:2,
         name:'Brookie',
+        title:'Brookie',
+        description:'galleta XXL rellena de Browreo',
         price:25,
         image1:'/cookies/Brookie/IMG_8870.webp',
         image2:'/cookies/Brookie/IMG_8874.webp',
@@ -42,6 +48,8 @@ export const cookies = [
     {
         id:3,
         name:'Cookietellas',
+        title:'Cookietellas',
+        description:'galleta de Nutella ®️',
         price:25,
         image1:'/cookies/Cookietellas/IMG_8888.webp',
         image2:'/cookies/Cookietellas/IMG_8926.webp',
@@ -51,6 +59,8 @@ export const cookies = [
     {
         id:4,
         name:'Carrot Bloom',
+        title:'CarrotBloom',
+        description:'galleta XXL de pastel de zanahoria',
         price:25,
         image1:'/cookies/CarrotBloom/IMG_8876.webp',
         image2:'/cookies/CarrotBloom/IMG_8922.webp',
@@ -59,6 +69,8 @@ export const cookies = [
     {
         id:5,
         name:'Crumble Supreme',
+        title:'CrumbleSupreme',
+        description:'galleta XXL de chispas de chocolate rellena de crema de avellanas ',
         price:25,
         image1:'/cookies/CrumbleSupreme/IMG_8886.webp',
         image2:'/cookies/CrumbleSupreme/IMG_8895.webp',
@@ -66,6 +78,8 @@ export const cookies = [
     {
         id:6,
         name:'Golden Dream',
+        title:'GoldenDream',
+        description:'galleta XXL con chunks de chocolate blanco con topping de Biscoff ®️ spread + galleta Lotus ®️ ',
         price:25,
         image1:'/cookies/GoldenDream/IMG_8878.webp',
         image2:'/cookies/GoldenDream/IMG_8906.webp',
@@ -73,13 +87,17 @@ export const cookies = [
     {
         id:7,
         name:'Grand Rocher',
+        title:'GrandRocher',
+        description:'galleta XXL rellena de Ferrero ®️ y crema de avellanas',
         price:25,
         image1:'/cookies/GrandRocher/IMG_8881.webp',
         image2:'/cookies/GrandRocher/IMG_8900.webp',
     },
     {
         id:8,
-        name:'Jelly deli',
+        name:'Jelly Deli',
+        title:'JellyDeli',
+        description:'galleta de mantequilla y rellena de mermelada ',
         price:25,
         image1:'/cookies/JellyDeli/IMG_8892.webp',
         image2:'/cookies/JellyDeli/IMG_8925.webp',
@@ -87,6 +105,8 @@ export const cookies = [
     {
         id:9,
         name:'Kindalicious',
+        title:'Kindalicious',
+        description:'galleta XXL de chocolate Kinder ®️',
         price:25,
         image1:'/cookies/Kindalicious/IMG_8882.webp',
         image2:'/cookies/Kindalicious/IMG_8904.webp',
@@ -94,12 +114,16 @@ export const cookies = [
     {
         id:10,
         name:'Matchunks',
+        title:'Matchunks',
+        description:'galleta XXL de matcha con chunks de chocolate blanco ',
         price:25,
         image1:'/cookies/Matchunks/IMG_8856.webp',
     },
     {
         id:11,
         name:'Cream Dream',
+        title:'CreamDream',
+        description:'oreo casera',
         price:25,
         image1:'/cookies/CreamDream/IMG_8914.webp',
         image2:'/cookies/CreamDream/IMG_8918.webp',
@@ -107,6 +131,8 @@ export const cookies = [
     {
         id:12,
         name:'Crumble Queen',
+        title:'CrumbleQueen',
+        description:'galleta XXL de chispas de chocolate',
         price:25,
         image1:'/cookies/CrumbleQueen/IMG_8883.webp',
         image2:'/cookies/CrumbleQueen/IMG_8902.webp',
@@ -114,6 +140,8 @@ export const cookies = [
     {
         id:13,
         name:'Chunky Velvet',
+        title:'ChunkyVelvet',
+        description:'galleta XXL de red velvet rellena y cubierta de Oreo ®️',
         price:25,
         image1:'/cookies/ChunkyVelvet/IMG_8880.webp',
         image2:'/cookies/ChunkyVelvet/IMG_8911.webp',
@@ -121,6 +149,8 @@ export const cookies = [
     {
         id:14,
         name:'Browreo',
+        title:'Browreo',
+        description:'brownie de oreo ',
         price:25,
         image1:'/cookies/Browreo/IMG_8875.webp',
         image2:'/cookies/Browreo/IMG_8916.webp',
@@ -128,7 +158,9 @@ export const cookies = [
     },
     {
         id:15,
-        name:'Midnightsun',
+        name:'Midnight Sun',
+        title:'MidnightSun',
+        description:'brownie de cheesecake',
         price:25,
         image1:'/cookies/Midnightsun/IMG_8872.webp',
         image2:'/cookies/Midnightsun/IMG_8920.webp',
@@ -137,6 +169,8 @@ export const cookies = [
     {
         id:16,
         name:'Penguinco',
+        title:'Penguinco',
+        description:'pingüino casero',
         price:25,
         image1:'/cookies/Penguinco/IMG_8893.webp',
         image2:'/cookies/Penguinco/IMG_8907.webp',
@@ -145,6 +179,8 @@ export const cookies = [
     {
         id:17,
         name:'Salty Temptation ',
+        title:'SaltyTemptation ',
+        description:'galleta XXL con chunks de chocolate semiamargo cubierta de dulce de leche y un toque de sal de mar',
         price:25,
         image1:'/cookies/SaltyTemptation/IMG_8858.webp',
         image2:'/cookies/SaltyTemptation/IMG_8860.webp',
@@ -153,6 +189,8 @@ export const cookies = [
     {
         id:18,
         name:'swettrio',
+        title:'swettrio',
+        description:'galleta de Nutella ®️  rellena de Oreo ®️ + Hershey´s ®️',
         price:25,
         image1:'/cookies/swettrio/IMG_8890.webp',
         image2:'/cookies/swettrio/IMG_8898.webp',
@@ -161,12 +199,16 @@ export const cookies = [
     {
         id:19,
         name:'The Matchmaker',
+        title:'TheMatchmaker',
+        description:'galleta XXL de matcha y rellena de crema de avellanas',
         price:25,
         image1:'/cookies/TheMatchmaker/IMG_8931.webp',
     },
     {
         id:20,
         name:'Tremendous Cream',
+        title:'TremendousCream',
+        description:'galleta XXL de cookies and cream con topping de chocolate Hershey´s ®️ y oreo blanca ',
         price:25,
         image1:'/cookies/TremendousCream/IMG_8862.webp',
         image2:'/cookies/TremendousCream/IMG_8863.webp',
