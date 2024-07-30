@@ -7,7 +7,7 @@ export const MainHistory = () => {
   return (
     <>
         <main className="w-full h-auto flex flex-col p-[3%] ">
-            <div className="w-full mb-[5%] md:mb-[3%]">
+            <div className="w-full mb-[5%] md:my-[3%]">
                 <h2 className="text-center text-6xl font-market">{mainHistory.title}</h2>
             </div>
             <section className="w-full h-auto flex flex-col-reverse md:flex-row md:gap-10 lg:gap-20 ">

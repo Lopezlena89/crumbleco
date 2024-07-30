@@ -11,7 +11,7 @@ export const MenuBar = () => {
     <>
         {stateMenu && (
           <>
-            <div className="fixed z-10 bg-[rgba(0,0,0,0.3)] top-0 left-0 w-full h-screen "/>
+            <div className="fixed z-20 bg-[rgba(0,0,0,0.3)] top-0 left-0 w-full h-screen "/>
             <div className="w-[80%] sm:w-[40%] lg:w-[30%] h-screen bg-white fixed z-20 top-0 left-0 drop-shadow-xl flex flex-col ">
                 <div className="w-full h-[10%] px-[10%] flex justify-end items-center">
                   <VscClose size={30} className="cursor-pointer hover:fill-[#e19c99] duration-300" onClick={()=>setStateMenu()}/>

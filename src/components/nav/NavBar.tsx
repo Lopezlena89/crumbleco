@@ -11,7 +11,7 @@ export const NavBar = () => {
   const {setStateMenu} = useStateMenuStore();
   return (
     <>
-        <div className="w-full h-[60px] bg-white/95 flex justify-between items-center px-[6%] sm:px-[10%] fixed shadow-xl z-10  border-[rgba(0,0,0,0.1)] border-b-[0.1px]">
+        <div className="w-full h-[60px] bg-white/95 flex justify-between items-center px-[6%] sm:px-[10%] fixed shadow-xl z-20  border-[rgba(0,0,0,0.1)] border-b-[0.1px]">
             <div className="flex items-center w-[90px] ">
               <VscMenu size={22} className="cursor-pointer hover:fill-[#e19c99] duration-300" onClick={()=>setStateMenu()}/>
               
