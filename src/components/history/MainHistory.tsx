@@ -12,7 +12,7 @@ export const MainHistory = () => {
             </div>
             <section className="w-full h-auto flex flex-col-reverse md:flex-row md:gap-10 lg:gap-20 ">
                 <div className="w-full md:w-[60%] h-full flex items-center justify-center"> 
-                    <div className="rounded-sm shadow-xl w-[100%] h-96  bg-[url('/hello_friends.webp')] bg-cover  bg-center"  /> 
+                    <div className="rounded-sm shadow-xl w-[100%] h-96  bg-[url('/hello_friends.webp')] bg-cover  bg-center drop-shadow-md"  /> 
                 </div>
                 <div className="w-full md:w-[40%] pb-10 md:py-0  h-full flex flex-col items-center justify-center text-center text-sm md:text-xs lg:text-sm  ">
                     <p className="font-century ">{mainHistory.paragraph1}</p>

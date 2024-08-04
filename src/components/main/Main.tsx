@@ -5,12 +5,13 @@ import { letterMain } from '@/database/main'
 import React from 'react'
 
 import { Button } from '@nextui-org/react'
+import Link from 'next/link'
 
 export const Main = () => {
   return (
       <>
         
-        <div className="w-full h-auto px-[0%] md:p-[3%] flex flex-col-reverse md:flex-row ">
+        <div className="w-full h-auto px-[0%] md:p-[3%] flex flex-col-reverse md:flex-row  drop-shadow-md">
         
           <div className="w-full md:w-1/2 h-[400px] md:h-full flex items-center justify-center"> 
             <div className="rounded-sm shadow-xl w-[100%]  h-[90%] md:h-[500px] bg-[url('/hello_friends.webp')] bg-cover bg-center"  /> 
@@ -23,9 +24,11 @@ export const Main = () => {
                     <p className='font-century pt-[5%] text-center'>{letter.paragraph}</p>
                 </div>
               ))}
-              <Button  className='rounded-md font-century bg-[#e19c99] text-black mt-[5%]' >
-                  Nosotros
-              </Button>
+              <Link href="/history">
+                <Button  className='rounded-md font-century bg-[#ecb3b0] text-black mt-[5%]' >
+                    Nosotros
+                </Button>
+              </Link>
             </div> 
           </div>
         </div> 

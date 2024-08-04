@@ -55,7 +55,7 @@ export default function page({ params }:props){
   
   return (
     <>
-        <div className="w-full h-screen flex flex-col">
+        <div className="w-full h-screen flex flex-col bg-[rgba(255,243,243,0.2)] ">
             <NavBar/>
             <MenuBar/>
             <Product params={params}/>

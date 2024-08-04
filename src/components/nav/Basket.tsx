@@ -1,8 +1,9 @@
-import { navProducts, navProps } from "@/database/products"
+'use client'
+
+import useStateCartStore from "@/store/stateCartStore"
 import { Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger, Link, } from "@nextui-org/react"
-import Image from "next/image"
 import { CiShoppingBasket } from "react-icons/ci"
-import { IoIosClose } from "react-icons/io";
+import { PiWhatsappLogoThin } from "react-icons/pi"
 
 
 
@@ -11,14 +12,16 @@ import { IoIosClose } from "react-icons/io";
 </div> */}
 
 export const Basket = () => {
+  const {statePrice,products} = useStateCartStore();
+
   return (
     <div className="relative flex items-center ">
         <Dropdown placement="bottom-end">
           <DropdownTrigger>
             <Link  className="bg-transparent">
-                <CiShoppingBasket  className="cursor-pointer fill-[#e19c99] " size={22} />
-                <div className="w-[15px] h-[15px] bg-[#e19c99] absolute -top-2 -right-2 rounded-full flex justify-center items-center" >
-                    <span className="text-white text-[0.6em]">3</span>
+                <CiShoppingBasket  className="cursor-pointer fill-[#ecb3b0] " size={22} />
+                <div className="w-[15px] h-[15px] bg-[#ecb3b0] absolute -top-2 -right-2 rounded-full flex justify-center items-center" >
+                    <span className="text-white text-[0.6em]">{products.length}</span>
                 </div>
             </Link>
           </DropdownTrigger>
@@ -27,25 +30,36 @@ export const Basket = () => {
               <p className="font-semibold">Your Order</p>
             </DropdownItem>
             <DropdownSection>
-                {
-                    navProducts.map((product,index)=>(
-                        <DropdownItem key={index} className="flex items-center w-full">
-                            <div className="w-full flex items-center  justify-start">
+               
+                  {
+                      products.map((product,index)=>(
+                        <DropdownItem key={index} className="flex  items-center w-full">
+                            <div className="w-full h-auto flex items-center  justify-between ">
                                 <div className="flex items-center">
-                                    <span className="font-semibold">{product.total}</span>
-                                    <span className="font-semibold pl-2">{product.product} </span>
+                                  <span className="font-semibold">{product.count}</span>
+                                  <span className="font-semibold ml-2">{product.name}</span>
                                 </div>
-                               
+                                <span className="font-semibold pl-2">${product.price} </span>
                             </div>
                         </DropdownItem>
-                    ))
-                }
+                      ))
+                  }
+                             
+              
             </DropdownSection>
             
-            <DropdownItem key="team_settings">
+            <DropdownItem >
                 <div className="flex justify-between items-center">
                 <span className="font-semibold">Total</span>
-                <span className="font-semibold">$350</span>
+                <span className="font-semibold">${statePrice}</span>
+                </div>
+            </DropdownItem>
+            <DropdownItem className="p-0" >
+                <div className="w-full h-[40px] bg-[#32d851] rounded-xl flex items-center justify-around">
+                  <span>Comprar</span>
+                  <Link>
+                    <PiWhatsappLogoThin color='black' size={25}  className="cursor-pointer   duration-300" />
+                  </Link>
                 </div>
             </DropdownItem>
           </DropdownMenu>

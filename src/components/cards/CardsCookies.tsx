@@ -20,7 +20,7 @@ interface Props{
     }
 }
 
-export const CardElement = ({cookie}:Props) => {
+export const CardsCookies = ({cookie}:Props) => {
 
     const {id, name,title, price, image1, image2, image3} = cookie;
 
@@ -39,7 +39,7 @@ export const CardElement = ({cookie}:Props) => {
                 
   return (
     <>
-        <Card isFooterBlurred className="w-full h-[300px] rounded-xl  drop-shadow-md">
+        <Card isFooterBlurred className="w-[150px] h-[150px] card rounded-xl  drop-shadow-md">
             <Link
                 href={'/cookies/' + title} 
                 className="relative w-full h-full gradient"
@@ -54,16 +54,8 @@ export const CardElement = ({cookie}:Props) => {
                 src={state && image2 ? image2 : image1}
                 />
             </Link>
-            <CardFooter className="absolute bg-[rgba(210,179,184,0.4)] bottom-0  rounded-b-lg dark:border-default-100 flex flex-col justify-around items-center">
-             <h3 className="font-market text-3xl text-amber-900">{name}</h3>
-              <div className="flex items-center">
-                <IoStar fill="#e19c99"/>
-                <IoStar fill="#e19c99"/>
-                <IoStar fill="#e19c99"/>
-                <IoStar fill="#e19c99"/>
-                <IoStar fill="#e19c99"/>
-              </div>
-                
+            <CardFooter className="absolute h-[40px] bg-[rgba(210,179,184,0.4)] bottom-0  rounded-b-lg dark:border-default-100 flex flex-col justify-center items-center">
+             <h3 className="font-market text-xl text-amber-900">{name}</h3>
             </CardFooter>
         </Card>
     </>

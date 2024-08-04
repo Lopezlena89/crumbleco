@@ -178,8 +178,8 @@ export const cookies = [
     },
     {
         id:17,
-        name:'Salty Temptation ',
-        title:'SaltyTemptation ',
+        name:'Salty Temptation',
+        title:'SaltyTemptation',
         description:'galleta XXL con chunks de chocolate semiamargo cubierta de dulce de leche y un toque de sal de mar',
         price:25,
         image1:'/cookies/SaltyTemptation/IMG_8858.webp',

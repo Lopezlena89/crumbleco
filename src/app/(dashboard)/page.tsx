@@ -10,7 +10,7 @@ export default function Page(){
 
   return (
     <>
-      <div className="w-full h-full flex flex-col bg-[#fffafa]  overflow-hidden">
+      <div className="w-full h-full flex flex-col bg-[rgba(255,243,243,0.7)]  overflow-hidden">
         <NavBar/>
         <MenuBar/>
         <Principal/>
