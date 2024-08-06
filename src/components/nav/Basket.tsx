@@ -47,7 +47,6 @@ export const Basket = () => {
                              
               
             </DropdownSection>
-            
             <DropdownItem >
                 <div className="flex justify-between items-center">
                 <span className="font-semibold">Total</span>
@@ -55,10 +54,10 @@ export const Basket = () => {
                 </div>
             </DropdownItem>
             <DropdownItem className="p-0" >
-                <div className="w-full h-[40px] bg-[#32d851] rounded-xl flex items-center justify-around">
-                  <span>Comprar</span>
-                  <Link>
-                    <PiWhatsappLogoThin color='black' size={25}  className="cursor-pointer   duration-300" />
+                <div className="w-full h-[40px] bg-[#eac7cf] rounded-xl flex items-center justify-around">
+                  <span className="text-[#d07f7c]">Comprar</span>
+                  <Link href="https://wa.me/524495406628" >
+                    <PiWhatsappLogoThin color='#d07f7c' size={25}  className="cursor-pointer   duration-300" />
                   </Link>
                 </div>
             </DropdownItem>

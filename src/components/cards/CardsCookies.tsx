@@ -55,7 +55,7 @@ export const CardsCookies = ({cookie}:Props) => {
                 />
             </Link>
             <CardFooter className="absolute h-[40px] bg-[rgba(210,179,184,0.4)] bottom-0  rounded-b-lg dark:border-default-100 flex flex-col justify-center items-center">
-             <h3 className="font-market text-xl text-amber-900">{name}</h3>
+             <h3 className="font-market text-xl text-[#d07f7c] drop-shadow-lg">{name}</h3>
             </CardFooter>
         </Card>
     </>

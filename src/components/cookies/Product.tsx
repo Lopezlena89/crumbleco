@@ -100,50 +100,50 @@ export const Product = ({params}:Props) => {
       <div className="w-full h-auto flex flex-col md:flex-row ">
         <div className="md:w-1/2 h-full p-[5%] pb-0">
           <div className="w-full h-[500px] md:h-[80%] gradient relative rounded-lg">
-            <Image src={image1} width={400} height={400} className="cookies" alt={name}/>
+            <Image src={image1} width={400} height={400} className="cookies shadow-md rounded-lg" alt={name}/>
           </div>
           <div className="w-full h-[150px] md:h-[20%] p-5 flex items-center gap-5">
             <div className="w-[100px] md:w-[20%] h-full relative rounded-lg gradient shadow-md cursor-pointer">
-              <Image src={image1} width={400} height={400} className="cookies" alt={name}/>
+              <Image src={image1} width={400} height={400} className="cookies shadow-md  rounded-lg" alt={name}/>
             </div>
             {
               image2 &&
               <div className="w-[100px] md:w-[20%] h-full relative rounded-lg gradient shadow-md cursor-pointer">
-                <Image src={image2 || ''} width={100} height={100} className="cookies" alt={name}/>
+                <Image src={image2 || ''} width={100} height={100} className="cookies shadow-md rounded-lg" alt={name}/>
               </div>
             }
             {
               image3 &&
               <div className="w-[100px] md:w-[20%] h-full relative rounded-lg gradient shadow-md cursor-pointer">
-                <Image src={image3 || ''} width={100} height={100} className="cookies" alt={name}/>
+                <Image src={image3 || ''} width={100} height={100} className="cookies shadow-md rounded-lg" alt={name}/>
               </div>
             }
           </div>
         </div>
         <div className="md:w-1/2 h-full flex flex-col items-center pt-[5%] ">
             <div className="w-full h-auto px-[10%] flex flex-col items-center">
-              <h2 className="font-market text-6xl">{name}</h2>
+              <h2 className="font-market text-6xl text-[#d07f7c] drop-shadow-lg">{name}</h2>
               <h3 className="font-century md:py-5">{description}</h3>
               <div className="w-full h-[100px] p-5 flex justify-center  items-center">
-                <div className="flex items-center border border-solid border-black rounded-lg">
+                <div className="flex items-center border border-solid border-[#d07f7c] rounded-lg">
                   <div 
                     className="flex justify-center w-[30px] h-[30px] items-center cursor-pointer"
                     onClick={restaCookie}
                   >
-                    <span >-</span>
+                    <span className="text-[#d07f7c]">-</span>
                   </div>
                   <div className="flex justify-center w-[30px] h-[30px] items-center">
-                    <span >{stateCookie}</span>
+                    <span className="text-[#d07f7c]">{stateCookie}</span>
                   </div>
                   <div 
                     className="flex justify-center w-[30px] h-[30px] items-center cursor-pointer"
                     onClick={sumaCookie}
                   >
-                    <span >+</span>
+                    <span className="text-[#d07f7c]">+</span>
                   </div>
                 </div>
                 <div className=" h-[30px] ml-10 w-[150px] flex justify-center items-center">
-                    <Button onClick={addAmout} className="bg-[#ecb3b0]">Add to cart ${stateCookieprice === 0 ? getPrice(): stateCookieprice}</Button>
+                    <Button onClick={addAmout} className="bg-[#ecb3b0] text-white">Add to cart ${stateCookieprice === 0 ? getPrice(): stateCookieprice}</Button>
                 </div>
             </div>
 

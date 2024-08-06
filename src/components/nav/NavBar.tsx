@@ -29,7 +29,9 @@ export const NavBar = () => {
            
             <div className="items-center w-[90px] flex justify-end ">
                 <Basket/>
-                <PiWhatsappLogoThin color="#d07f7c" size={22} className="mx-3 hidden sm:block cursor-pointer " />
+                <Link href="https://wa.me/524495406628" >
+                  <PiWhatsappLogoThin color="#d07f7c" size={22} className="mx-3 hidden sm:block cursor-pointer " />
+                </Link>
                 <Link href={"https://www.instagram.com/crumbleco_"}>
                   <PiInstagramLogoThin color="#d07f7c" size={22} className="ml-3 sm:ml-0 cursor-pointer " />
                 </Link>
