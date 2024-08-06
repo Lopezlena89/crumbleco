@@ -14,8 +14,8 @@ export const CookieCare = () => {
             <div className="w-full md:w-[30%] h-auto   md:h-full flex items-center justify-center">
                 <div className="my-[5%] w-[90%] md:w-[80%] h-auto  md:h-[500px] flex flex-col items-center justify-center">
                     <div className='flex flex-col  items-center text-center '>
-                        <h2 className="font-market text-5xl">{cookieCare.title}</h2>
-                        <h2 className="font-market text-5xl">{cookieCare.title2}</h2>
+                        <h2 className="font-market text-5xl text-[#d07f7c] drop-shadow-lg">{cookieCare.title}</h2>
+                        <h2 className="font-market text-5xl text-[#d07f7c] drop-shadow-lg">{cookieCare.title2}</h2>
                         <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph}</p>
                         <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph1}</p>
                         <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph2}</p>

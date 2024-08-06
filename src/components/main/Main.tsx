@@ -20,12 +20,12 @@ export const Main = () => {
             <div className="mt-[5%] w-[80%] md:w-[70%] h-auto  md:h-[500px] flex flex-col items-center justify-center">
               {letterMain.map((letter,index)=>(
                 <div key={index} className='flex flex-col  items-center '>
-                    <h2 className='font-market text-6xl'>{letter.title}</h2>
+                    <h2 className='font-market text-6xl text-[#d07f7c] drop-shadow-lg'>{letter.title}</h2>
                     <p className='font-century pt-[5%] text-center'>{letter.paragraph}</p>
                 </div>
               ))}
               <Link href="/history">
-                <Button  className='rounded-md font-century bg-[#ecb3b0] text-black mt-[5%]' >
+                <Button  className='rounded-md font-century bg-[#ecb3b0] text-white mt-[10%]' >
                     Nosotros
                 </Button>
               </Link>

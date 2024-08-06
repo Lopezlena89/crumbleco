@@ -59,7 +59,7 @@ export default function page({ params }:props){
             <NavBar/>
             <MenuBar/>
             <Product params={params}/>
-
+      
         </div>
     </>
   )

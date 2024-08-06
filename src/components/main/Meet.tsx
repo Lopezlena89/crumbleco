@@ -10,7 +10,7 @@ export const Meet = () => {
   return (
     <>
         <div className="w-full h-auto flex flex-col items-center py-[10%] md:py-[0%]">
-            <h2 className="pb-[40px] font-market text-6xl">{meetProducts.title}</h2>
+            <h2 className="pb-[40px] font-market text-6xl text-[#d07f7c] drop-shadow-lg">{meetProducts.title}</h2>
             <div className="w-full h-auto text-center overflow-x-scroll px-5 container-card whitespace-nowrap">
                 <Card isFooterBlurred className="rounded-sm w-[300px] md:w-[350px] h-[400px] card shadow-md">
                     <Image

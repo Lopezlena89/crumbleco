@@ -11,8 +11,8 @@ export const PrincipalCookies = () => {
     <div className="w-full h-[700px] md:h-[850px] relative bg-gradient-to-b from-red-100 to-white/5 flex justify-start overflow-hidden">
         <div className="w-full sm:w-1/2 lg:w-[70%] h-full flex justify-center">
             <div className="w-full  lg:w-[70%]h-full flex flex-col items-center justify-center">
-                <h2 className="font-market text-6xl lg:text-8xl w-[400px] text-center text-amber-900">{cookiesData.title}</h2>
-                <h3 className="font-century text-xl w-[400px] text-center py-5 text-amber-900">{cookiesData.subtitle}</h3>
+                <h2 className="font-market text-6xl lg:text-8xl w-[400px] text-center text-[#d07f7c] drop-shadow-lg">{cookiesData.title}</h2>
+                <h3 className="font-century text-xl w-[400px] text-center py-5 text-[#d07f7c] drop-shadow-lg">{cookiesData.subtitle}</h3>
                
                 <div className="w-full sm:w-[70%] h-[300px] absolute bottom-0 flex justify-center items-center">
                   <Image width={200} height={200} alt="cookie1" src="/elementos/cookie1.png"/>
