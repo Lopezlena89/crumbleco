@@ -20,8 +20,8 @@ export const Meet = () => {
                         className="z-0 w-full h-full object-cover"
                         src="/cards/card-1.webp"
                     />
-                    <CardFooter className="rounded-sm absolute border-t-1 border-t-black  bg-black/30 bottom-0  flex justify-around">
-                        <p className="text-white/60 text-2xl font-century">Cookie Bar</p>
+                    <CardFooter className="rounded-sm absolute border-t-1 border-t-black  bg-white/30 bottom-0  flex justify-around">
+                        <p className="text-white/60 text-2xl font-century text-[#ecb3b0]">Cookie Bar</p>
                         <Link href="/cookies"><Button className="text-white  bg-[#ecb3b0]  font-century rounded-md" size="sm">Go</Button></Link>
                     </CardFooter>
                 </Card>
@@ -33,7 +33,7 @@ export const Meet = () => {
                         className="z-0 w-full h-full object-cover"
                         src="/cards/card-2.webp"
                     />
-                    <CardFooter className="rounded-sm absolute text-2xl border-t-1 border-t-black  bg-black/30 bottom-0  flex justify-around">
+                    <CardFooter className="rounded-sm absolute text-2xl border-t-1 border-t-black  bg-white/30 bottom-0  flex justify-around">
                         <p className="font-century text-white/60">Crumble Specials</p>
                         <Button size="sm" className="font-century bg-[#ecb3b0]  text-white rounded-md">Go</Button>
                     </CardFooter>
@@ -46,7 +46,7 @@ export const Meet = () => {
                         className="z-0 w-full h-full object-cover"
                         src="/cards/card-3.webp"
                     />
-                    <CardFooter className="rounded-sm absolute text-2xl border-t-1 border-t-black  bg-black/30 bottom-0  flex justify-around">
+                    <CardFooter className="rounded-sm absolute text-2xl border-t-1 border-t-black  bg-white/30 bottom-0  flex justify-around">
                         <p className="font-century text-white/60">Cold Bar</p>
                         <Button size="sm" className="font-century bg-[#ecb3b0]   text-white rounded-md">Go</Button>
                     </CardFooter>

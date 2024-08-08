@@ -20,7 +20,7 @@ export const Basket = () => {
           <DropdownTrigger>
             <Link  className="bg-transparent">
                 <CiShoppingBasket  className="cursor-pointer fill-[#d07f7c] font-extrabold " size={22} />
-                <div className="w-[15px] h-[15px] bg-[#ecb3b0] absolute -top-2 -right-2 rounded-full flex justify-center items-center" >
+                <div className="w-[15px] h-[15px] bg-[#d07f7c] absolute -top-2 -right-2 rounded-full flex justify-center items-center" >
                     <span className="text-white text-[0.6em]">{products.length}</span>
                 </div>
             </Link>

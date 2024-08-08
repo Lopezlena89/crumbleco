@@ -21,11 +21,11 @@ export const Main = () => {
               {letterMain.map((letter,index)=>(
                 <div key={index} className='flex flex-col  items-center '>
                     <h2 className='font-market text-6xl text-[#d07f7c] drop-shadow-lg'>{letter.title}</h2>
-                    <p className='font-century pt-[5%] text-center'>{letter.paragraph}</p>
+                    <p className='font-century pt-[5%] text-center text-[#d07f7c]'>{letter.paragraph}</p>
                 </div>
               ))}
-              <Link href="/history">
-                <Button  className='rounded-md font-century bg-[#ecb3b0] text-white mt-[10%]' >
+              <Link href="/history" className='mt-[10%]'>
+                <Button  className='rounded-md font-century bg-[#ecb3b0] text-white ' >
                     Nosotros
                 </Button>
               </Link>

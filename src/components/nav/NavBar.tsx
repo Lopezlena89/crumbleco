@@ -12,7 +12,7 @@ export const NavBar = () => {
   const {setStateMenu} = useStateMenuStore();
   return (
     <>
-        <div className="w-full h-[60px] bg-[#eac7cf] flex justify-between items-center px-[6%] sm:px-[10%] fixed shadow-xl z-20  border-[rgba(0,0,0,0.1)] border-b-[0.1px]">
+        <div className="w-full h-[60px] bg-white/80 flex justify-between items-center px-[6%] sm:px-[10%] fixed shadow-xl z-20  border-[rgba(0,0,0,0.1)] border-b-[0.1px]">
             <div className="flex items-center w-[90px] ">
               <VscMenu color="#d07f7c" size={22} className="cursor-pointer " onClick={()=>setStateMenu()}/>
               <Link href={"https://maps.app.goo.gl/ir2RCYZttSfPQq8o7"}>
