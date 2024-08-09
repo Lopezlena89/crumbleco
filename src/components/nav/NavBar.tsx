@@ -15,8 +15,8 @@ export const NavBar = () => {
         <div className="w-full h-[60px] bg-white/80 flex justify-between items-center px-[6%] sm:px-[10%] fixed shadow-xl z-20  border-[rgba(0,0,0,0.1)] border-b-[0.1px]">
             <div className="flex items-center w-[90px] ">
               <VscMenu color="#d07f7c" size={22} className="cursor-pointer " onClick={()=>setStateMenu()}/>
-              <Link href={"https://maps.app.goo.gl/ir2RCYZttSfPQq8o7"}>
-                <PiMapPinLight color="#d07f7c" size={22} className="ml-3 hidden sm:block cursor-pointer "  />
+              <Link href={"https://maps.app.goo.gl/ir2RCYZttSfPQq8o7"} className="ml-3">
+                <PiMapPinLight color="#d07f7c" size={22} className=" hidden sm:block cursor-pointer "  />
               </Link>
             </div>
             <div className="flex flex-col h-full  justify-center items-center overflow-hidden">

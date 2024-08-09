@@ -16,10 +16,10 @@ export const CookieCare = () => {
                     <div className='flex flex-col  items-center text-center '>
                         <h2 className="font-market text-5xl text-[#d07f7c] drop-shadow-lg">{cookieCare.title}</h2>
                         <h2 className="font-market text-5xl text-[#d07f7c] drop-shadow-lg">{cookieCare.title2}</h2>
-                        <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph}</p>
-                        <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph1}</p>
-                        <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph2}</p>
-                        <p className='font-century pt-[5%] text-center'>{cookieCare.paragraph3}</p>
+                        <p className='font-century pt-[5%] text-center text-[#d07f7c]'>{cookieCare.paragraph}</p>
+                        <p className='font-century pt-[5%] text-center text-[#d07f7c]'>{cookieCare.paragraph1}</p>
+                        <p className='font-century pt-[5%] text-center text-[#d07f7c]'>{cookieCare.paragraph2}</p>
+                        <p className='font-century pt-[5%] text-center text-[#d07f7c]'>{cookieCare.paragraph3}</p>
                     </div>
                 
                     
