@@ -4,8 +4,11 @@ import useStateMenuStore from "@/store/stateMenuStore";
 import Link from "next/link";
 import { VscClose } from "react-icons/vsc";
 import { IoHomeOutline } from "react-icons/io5";
-import { PiCookie } from "react-icons/pi";
+import { PiCookie,PiCakeLight,PiHandshakeLight } from "react-icons/pi";
 import { HiOutlineBuildingStorefront } from "react-icons/hi2";
+
+import Image from "next/image";
+
 
 
 export const MenuBar = () => {
@@ -35,17 +38,20 @@ export const MenuBar = () => {
                 </div>
                 <div className="w-full h-[5%] px-[10%]  flex justify-start items-center">
                   <div className="flex items-center w-[100%] h-[100%] px-[5%] rounded-lg hover:bg-red-100">
-                    <span className="cursor-pointer text-[#d07f7c]">Crumble Specials</span>
+                    <PiCakeLight color="#d07f7c" size={20}/>
+                    <Link href={'/specials'} className="cursor-pointer text-[#d07f7c] pl-3">Crumble Specials</Link>
                   </div>
                 </div>
                 <div className="w-full h-[5%] px-[10%]  flex justify-start items-center">
                   <div className="flex items-center w-[100%] h-[100%] px-[5%] rounded-lg hover:bg-red-100">
-                    <span className=" cursor-pointer text-[#d07f7c]">Cold Bar</span>
+                    <Image src="/milkshake--milkshake-drink-takeaway-cup-cold-beverage.png" width={18} height={18} alt="drizzel"/>
+                    <Link href={'/cold'} className=" cursor-pointer text-[#d07f7c] pl-3">Cold Bar</Link>
                   </div>
                 </div>
                 <div className="w-full h-[5%] px-[10%]  flex justify-start items-center">
                   <div className="flex items-center w-[100%] h-[100%] px-[5%] rounded-lg hover:bg-red-100">
-                    <span className=" cursor-pointer text-[#d07f7c]">Colabs</span>
+                    <PiHandshakeLight color="#d07f7c" size={20}/>
+                    <Link href={'/colabs'} className=" cursor-pointer text-[#d07f7c] pl-3">Colabs</Link>
                   </div>
                 </div>
                 <div className="w-[60px] h-[0.5px] bg-[#ecb3b0] duration-300 ml-[10%] my-[5%]" />

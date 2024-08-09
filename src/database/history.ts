@@ -1,7 +1,7 @@
 
 
 export const mainHistory = {
-    title:'pedacito de nuestra historia',
+    title:'un pedacito de nuestra historia',
     paragraph1:"Soy Ani, soy mercadóloga de profesión, catadora de galletas por elección y el título que más me gusta: Cookie CEO. Soy mamá, esposa, hija, amiga, podcaster, miss y emprendedora. Soy un poquito de todo, pero ser “Crumble Queen” es mi versión favorita.",
     paragraph2:"Siempre he amado la cocina y todos mis veranos de chiquita la pasaba cocinando con mi abuela (que es una de las personas que mejor cocinan en el mundo, sin duda una partecita de esto es gracias a ella).",
     paragraph3:"Los que me conocen, saben que no puedo estar quieta. Siempre estoy haciendo, pensando, aprendiendo o vendiendo. Y la universidad, no iba a ser la excepción. Empecé vendiendo croissants de Nutella, brownies y PUM un día: GALLETAS. Te confieso que la primera vez que las hice (casi a mis 23 años) fui un fiasco jaja peeeero así se aprende y aprendí bien porque nació mi producto estrella: COOKIETELLA. ",

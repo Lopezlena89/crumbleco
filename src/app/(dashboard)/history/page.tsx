@@ -7,7 +7,7 @@ import { MenuBar, NavBar } from "@/components/nav";
 export default function Page(){
   return (
     <>  
-        <div className="w-full h-full flex flex-col">
+        <div className="w-full h-full flex flex-col overflow-hidden">
             <NavBar/>
             <MenuBar/>
             <PrincipalHistory/>

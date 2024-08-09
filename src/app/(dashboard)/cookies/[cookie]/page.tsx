@@ -1,4 +1,5 @@
 import { Product } from "@/components/cookies/Product";
+import { CookieCare } from "@/components/main";
 import { MenuBar, NavBar } from "@/components/nav";
 import { cookies } from "@/database/products";
 import { Metadata, ResolvingMetadata } from "next";
@@ -55,11 +56,10 @@ export default function page({ params }:props){
   
   return (
     <>
-        <div className="w-full h-screen flex flex-col bg-[rgba(255,243,243,0.2)] ">
+        <div className="w-full h-full flex flex-col bg-[rgba(255,243,243,0.2)] overflow-hidden">
             <NavBar/>
             <MenuBar/>
             <Product params={params}/>
-      
         </div>
     </>
   )

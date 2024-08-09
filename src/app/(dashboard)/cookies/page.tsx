@@ -7,7 +7,7 @@ import { MenuBar, NavBar } from "@/components/nav"
 export default function page(){
   return (
     <>
-        <div className="w-full h-full flex flex-col bg-[rgba(255,243,243,0.3)]">
+        <div className="w-full h-full flex flex-col bg-[rgba(255,243,243,0.3)] overflow-hidden">
             <NavBar/>
             <MenuBar/>
             <PrincipalCookies/>
